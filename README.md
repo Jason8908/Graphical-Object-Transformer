@@ -18,3 +18,6 @@ Within this project, vertices, polygons, and meshes are all considered graphical
 
 ### The Readers and Writers
 Because each file format is different, there are two interfaces representing a general MeshReader and MeshWriter respectively; both of these interfaces are implemented for all three supported file formats, so each of the three formats has both a reader and writer. Within the Mesh class, there are fields that store the type of MeshRead and MeshWriter that is to be used when its readFromFile() or writeToFile() methods are called. Users are easily able to set the type of MeshReader/MeshWriter that they wish to use by using the setReader() and setWriter() methods within the Mesh class. The use of abstractions and interfaces allow for less duplicate code and should there be a need, to easily add support for new file formats later on.
+
+### JUnit Test Cases
+There is a suite of test cases comprised of more than 30 unit tests that subject all of the classes defined in the project to rigorous testing in order to lower the possibility of unwanted behavior. 100% line coverage was achieved in all relevant classes.
